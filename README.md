@@ -33,21 +33,17 @@ library editable.
 
 ### Style checks
 
-Validate the imports
 
-    isort src/**/*.py --check-only
+Style guide enforcement using isort and flake8
 
-Show suggested edits
-
-    isort src/**/*.py --diff
-
-Style guide enforcement using flake8
+	isort --check-only --diff --gitignore --color \
+		--force-grid-wrap 2 --multi-line 8 --trailing-comma src/
 
     flake8 --extend-ignore=E265 --statistics src/
 
 ### Unit tests
 
-    python -m unittest -v src/tests/test_*.py
+    python -m unittest --verbose --buffer src/tests/test_*.py
 
 ## Build a release
 

@@ -3,4 +3,8 @@
 __version__ = "0.1.0"
 
 # Local folders
-from .core import PA, Stub, list_devices
+from .core import (
+    PA,
+    Stub,
+    list_devices,
+    )
